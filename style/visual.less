@@ -1,0 +1,112 @@
+
+@import (less) "node_modules/powerbi-visuals-utils-interactivityutils/lib/index.css";
+@import (less) "node_modules/powerbi-visuals-utils-chartutils/lib/index.css";
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    em {
+        background: yellow;
+        padding: 5px;
+        
+    }
+}
+
+.xAxis path {
+    display: block;
+}
+
+.yAxis1 path {
+    display: block;
+}
+
+.yAxis2 path {
+    display: block;
+}
+
+.floatDiv {
+    position: fixed;
+    overflow: hidden;
+    z-index: 2400;
+    opacity: 1;
+    left: 80px;
+    top: 100px !important;
+    width: 550px;
+    //height: 300px;
+    background-color: #CCCCCC;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 0.5px;
+    border-radius: 15px;
+    align-content: center;
+    vertical-align: middle;
+    margin: 20 auto;
+    //clip-path: circle(50%);
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+.legendLeft {
+    position: fixed;
+    overflow: hidden;
+    z-index: 2400;
+    opacity: 1;
+    left: 0;
+    top: 0 ;
+    width: 20%;
+    height: 100%;
+    background-color: #CCCCCC;
+    border-style: solid;
+    border-color: #000000;
+   // border-width: 0.5px;
+   // border-radius: 15px;
+    align-content: center;
+    vertical-align: middle;
+    margin: 20 auto;
+    //clip-path: circle(50%);
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+.helpLink {
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #80B0E0;
+    border-radius: 20px;
+    color: #80B0E0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+
+    &.hidden {
+        display: none;
+    }
+}
+
+.LandingPage {
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    font-size: 12pt;
+    right: 15px;
+}
+
+.LandingPageHelpLink {
+    position: absolute;
+    text-decoration: underline;
+    top: 50px;
+    font-size: 12pt;
+    right: 15px;
+}

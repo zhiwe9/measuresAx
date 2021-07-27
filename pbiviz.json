@@ -1,0 +1,25 @@
+{
+    "visual": {
+        "name": "measuresAx",
+        "displayName": "measuresAx",
+        "guid": "measuresAx1F14F4AB0B2B4C5E807032A4DC16A625",
+        "visualClassName": "measuresAx",
+        "version": "1.0.0",
+        "description": "Powerbi custom pbiviz to visualize multiple measures in lines and bar or area graph",
+        "supportUrl": "http://localhost/pbiviz",
+        "gitHubUrl": ""
+    },
+    "apiVersion": "2.6.0",
+    "author": {    
+        "name": "Zhiwei Liu",
+        "email": "zhiwei.liu@va.gov"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": [],
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+}

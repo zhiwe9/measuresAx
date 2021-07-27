@@ -1,0 +1,364 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "X Axis",
+            "name": "xAxis",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Legend",
+            "name": "legend",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Y Axis 1",
+            "name": "yAxis1",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Y Axis 2",
+            "name": "yAxis2",
+
+            
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Filter",
+            "name": "filter",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Tooltips",
+            "name": "Tooltips",
+            "kind": "Measure"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "table": {
+                "rows": {
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 30000
+                        }
+                    },
+                    "select": [
+                        {
+                            "for": {
+                                "in": "xAxis"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "legend"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "filter"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "yAxis1"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "yAxis2"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "objects": {
+        "generalView": {
+            "displayName": "General View",
+            "properties": {
+                "opacity": {
+                    "displayName": "Bars Opacity",
+                    "type": {
+                        "integer": true
+                    }
+                },
+                "fill": {
+                    "displayName": "Bars Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "gradientColor": {
+                    "displayName": "Gradient Color",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "curvedLines": {
+                    "displayName": "Curved lines",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "bgChart": {
+                    "displayName": "Background Chart",
+                    "type": {
+                        "enumeration": [
+                            {
+                                "value": "Bar",
+                                "displayName": "Bar"
+                            },
+                            {
+                                "value": "Area",
+                                "displayName": "Area"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "enableAxis": {
+            "displayName": "Enable Axis",
+            "properties": {
+                "show": {
+                    "displayName": "Enable Axis",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Text Size",
+                    "displayNameKey": "Visual_TextSize",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "xAxis": {
+                    "displayName": "Enable X Axis Title",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "xAxisTitle": {
+                    "displayName": "X Axis Title",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "yAxis1": {
+                    "displayName": "Enable Y Axis 1",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "yAxis1Title": {
+                    "displayName": "Y Axis 1 Title",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "yAxis1Proportion": {
+                    "displayName": "Y Axis 1 ProPortion",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "yAxis2": {
+                    "displayName": "Enable Y Axis 2",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "yAxis2Title": {
+                    "displayName": "Y Axis 2 Title",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "yAxis2Proportion": {
+                    "displayName": "Y Axis 2 ProPortion",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "yAxis1ScaleYAxis2": {
+                    "displayName": "Y Axis 1 and 2 Same Scale",
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        },
+        "legend": {
+            "displayName": "Legend",
+            "displayNameKey": "Visual_Legend",
+            "description": "Display legend options",
+            "descriptionKey": "Visual_Description_Legend",
+            "properties": {
+                "show": {
+                    "displayName": "Show",
+                    "displayNameKey": "Visual_Show",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "position": {
+                    "displayName": "Position",
+                    "displayNameKey": "Visual_Position",
+                    "description": "Select the location for the legend",
+                    "descriptionKey": "Visual_Description_Position",
+                    "type": {
+                        "enumeration": [
+                            {
+                                "value": "Top",
+                                "displayName": "Top",
+                                "displayNameKey": "Visual_Position_Top"
+                            },
+                            {
+                                "value": "Bottom",
+                                "displayName": "Bottom",
+                                "displayNameKey": "Visual_Position_Bottom"
+                            },
+                            {
+                                "value": "Left",
+                                "displayName": "Left",
+                                "displayNameKey": "Visual_Position_Left"
+                            },
+                            {
+                                "value": "Right",
+                                "displayName": "Right",
+                                "displayNameKey": "Visual_Position_Right"
+                            },
+                            {
+                                "value": "TopCenter",
+                                "displayName": "Top Center",
+                                "displayNameKey": "Visual_Position_TopCenter"
+                            },
+                            {
+                                "value": "BottomCenter",
+                                "displayName": "Bottom Center",
+                                "displayNameKey": "Visual_Position_BottomCenter"
+                            },
+                            {
+                                "value": "LeftCenter",
+                                "displayName": "Left Center",
+                                "displayNameKey": "Visual_Position_LeftCenter"
+                            },
+                            {
+                                "value": "RightCenter",
+                                "displayName": "Right Center",
+                                "displayNameKey": "Visual_Position_RightCenter"
+                            }
+                        ]
+                    }
+                },
+                "showTitle": {
+                    "displayName": "Legend Title",
+                    "displayNameKey": "Visual_Title",
+                    "description": "Display a title for legend symbols",
+                    "descriptionKey": "Visual_Description_Title",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "titleText": {
+                    "displayName": "Legend Title",
+                    "displayNameKey": "Visual_LegendName",
+                    "description": "Title text",
+                    "descriptionKey": "Visual_Description_LegendName",
+                    "type": {
+                        "text": true
+                    },
+                    "suppressFormatPainterCopy": true
+                },
+                "labelColor": {
+                    "displayName": "Legend Color",
+                    "displayNameKey": "Visual_Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Text Size",
+                    "displayNameKey": "Visual_TextSize",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        },
+        "colorSelector": {
+            "displayName": "Data Colors",
+            "properties": {
+                "fill": {
+                    "displayName": "Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "averageLine": {
+            "displayName": "Average Line",
+            "objectCategory": 2,
+            "properties": {
+                "show": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "displayName": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "fill": {
+                    "displayName": "Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "showDataLabel": {
+                    "displayName": "Data label",
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        }
+    },
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        },
+        "roles": [
+            "Tooltips"
+        ]
+    },
+    "sorting": {
+        "default": {}
+    },
+    "supportsHighlight": true
+}
